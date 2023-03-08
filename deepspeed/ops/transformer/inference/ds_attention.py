@@ -5,6 +5,7 @@ Copyright 2022 The Microsoft DeepSpeed Team
 import math
 import torch
 import torch.nn as nn
+from torch.nn import functional as F
 from deepspeed import comm as dist
 from deepspeed.accelerator import get_accelerator
 from .op_binding import LinearOp, VectorMatMulOp, SoftmaxContextOp, QKVGemmOp, SoftmaxOp
@@ -131,7 +132,8 @@ class DeepSpeedSelfAttention(nn.Module):
             layer_past=layer_past,
             alibi=alibi)
 
-        output = self.vector_matmul_func(input=context_layer, weight=self.attn_ow)
+        # output = self.vector_matmul_func(input=context_layer, weight=self.attn_ow)
+        output = self.vector_matmul_func(context_layer, self.attn_ow)
 
         inp_norm = qkv_out[-1]
 
@@ -146,6 +148,29 @@ class BloomSelfAttention(DeepSpeedSelfAttention):
     def __init__(self, *args, **kwargs):
         super(BloomSelfAttention, self).__init__(*args, **kwargs)
         self.softmax_func = SoftmaxOp(self.config)
+
+    def softmax_pyfunc(self,
+                        attn_scores,
+                        attn_mask,
+                        alibi,
+                        triangular,
+                        recompute,
+                        local_attention,
+                        window_size,
+                        async_op,
+                        layer_scale,
+                        head_offset,
+                        mp_size=1):
+        input_dtype = attn_scores.dtype
+        if (triangular):
+            tri = ~torch.tril(torch.ones_like(attn_scores)).to(bool)
+            attn_scores = torch.masked_fill(attn_scores * layer_scale, tri,     torch.finfo(input_dtype).min)
+        if alibi is not None:
+            attn_scores += alibi
+        if attn_mask is not None:
+            attn_scores += attn_mask
+        attn_probs = F.softmax(attn_scores, dim=-1, dtype=torch.float32).       to(input_dtype)
+        return attn_probs
 
     ########### This part is taken/modified form the HF modeling_bloom.py ################
     # Reference: https://github.com/huggingface/transformers/blob/main/src/transformers/models/bloom/modeling_bloom.py
@@ -242,7 +267,9 @@ class BloomSelfAttention(DeepSpeedSelfAttention):
 
         offset = dist.get_rank(
         ) * self.num_attention_heads_per_partition if dist.is_initialized() else 0
-        attention_probs = self.softmax_func(
+        alibi = alibi[offset: offset + self.num_attention_heads_per_partition]
+        # attention_probs = self.softmax_func(
+        attention_probs = self.softmax_pyfunc(
             attn_scores=attention_scores,
             attn_mask=((1 - input_mask).half() * minus_inf),
             alibi=alibi,
