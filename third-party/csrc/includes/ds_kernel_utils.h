@@ -10,10 +10,11 @@ used throughout the codebase.
 
 #pragma once
 
-#include <cuda.h>
+#include <sycl/sycl.hpp>
+#include <dpct/dpct.hpp>
 
-#define DS_HD_INLINE __host__ __device__ __forceinline__
-#define DS_D_INLINE __device__ __forceinline__
+#define DS_HD_INLINE __forceinline__
+#define DS_D_INLINE __dpct_inline__
 
 #ifdef __HIP_PLATFORM_HCC__
 
@@ -27,16 +28,14 @@ constexpr int hw_warp_size = 64;
 // constexpr variant of warpSize for templating
 constexpr int hw_warp_size = 32;
 
-#if __CUDA_ARCH__ >= 530
+#if DPCT_COMPATIBILITY_TEMP >= 530
 #define HALF_PRECISION_AVAILABLE = 1
 /* #define PTX_AVAILABLE */
 #endif  // __CUDA_ARCH__ >= 530
 
-#if __CUDA_ARCH__ >= 800
+#if DPCT_COMPATIBILITY_TEMP >= 800
 #define ASYNC_COPY_AVAILABLE
 #endif  // __CUDA_ARCH__ >= 800
-
-#include <cooperative_groups.h>
 
 #endif  //__HIP_PLATFORM_HCC__
 

@@ -1,0 +1,283 @@
+---
+MainSourceFile:  '/home/baodi/workspace/dpct_deepspeed/third-party/csrc/transformer/inference/includes/inference_cuda_layers.h'
+Replacements:
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          113
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          143
+    Length:          18
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          213
+    Length:          23
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          1121
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          1379
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          1766
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          2024
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          2148
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          2558
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          2872
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          3352
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          4069
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          4428
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          4792
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          5111
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          5517
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          6001
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          6324
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          6697
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          7543
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          7855
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          8152
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          8639
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Offset:          8882
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cuda_layers.h'
+    Digest:          b5186e6dc8e2d72044e5af05593fa211
+DpctVersion:     17.0.0
+MainHelperFileName: ''
+USMLevel:        ''
+FeatureMap:      {}
+CompileTargets:  {}
+OptionMap:
+  AnalysisScopePath:
+    Value:           '/home/baodi/workspace/dpct_deepspeed'
+    Specified:       false
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           ''
+    Specified:       false
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  EnablepProfiling:
+    Value:           'false'
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitClNamespace:
+    Value:           'false'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionDDFlag:
+    Value:           '0'
+    Specified:       false
+  ExtensionDEFlag:
+    Value:           '4294967295'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'false'
+    Specified:       false
+  RuleFile:
+    Value:           ''
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+...

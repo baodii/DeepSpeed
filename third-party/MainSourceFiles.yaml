@@ -1,0 +1,598 @@
+---
+MainSourceFile:  MainSrcFiles_placehold
+Replacements:
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          99
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          256
+    Length:          34
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          777
+    Length:          11
+    ReplacementText: "/*\nDPCT1110:2: The total declared local variable size in device function fused_ln exceeds 128 bytes and may cause high register pressure. Consult with your hardware vendor to find the total register size available and adjust the code, or use smaller sub-group size to avoid high register pressure.\n*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          1016
+    Length:          0
+    ReplacementText: ",\n                         const sycl::nd_item<3> &item_ct1,\n                         float *reduce_buffer"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          1085
+    Length:          16
+    ReplacementText: auto
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          1107
+    Length:          23
+    ReplacementText: 'item_ct1.get_group()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          1136
+    Length:          35
+    ReplacementText: 'sycl::sub_group'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          1179
+    Length:          37
+    ReplacementText: 'item_ct1.get_sub_group()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          1281
+    Length:          18
+    ReplacementText: 'tb.group_index()[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          1382
+    Length:          19
+    ReplacementText: 'tb.thread_index()[1]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          1450
+    Length:          19
+    ReplacementText: 'tb.thread_index()[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          1565
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          2287
+    Length:          0
+    ReplacementText: ', item_ct1, reduce_buffer'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          2923
+    Length:          0
+    ReplacementText: ', item_ct1, reduce_buffer'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          2980
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1013:7: The rounding mode could not be specified and the generated code may have different accuracy than the original code. Verify the correctness. SYCL math built-in function rounding mode is aligned with OpenCL C 1.2 standard.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          3004
+    Length:          31
+    ReplacementText: 'sycl::rsqrt(variance + epsilon)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          4165
+    Length:          0
+    ReplacementText: "/*\nDPCT1049:3: The work-group size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the work-group size if needed.\n*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          4238
+    Length:          152
+    ReplacementText: "{\\\n  dpct::has_capability_or_fail(stream->get_device(), {sycl::aspect::fp64, sycl::aspect::fp16});\\\n  stream->submit(\\\n    [&](sycl::handler &cgh) {\\\n      sycl::local_accessor<float, 1> reduce_buffer_acc_ct1(sycl::range<1>(max_warps * elems), cgh);\\\n\\\n      T * output_ct0 = output;\\\n      const T * vals_ct1 = vals;\\\n      const T * gamma_ct2 = gamma;\\\n      const T * beta_ct3 = beta;\\\n      auto epsilon_ct4 = epsilon;\\\n      auto elems_per_row_ct5 = elems_per_row;\\\n\\\n      cgh.parallel_for(\\\n        sycl::nd_range<3>(grid * block, block), \\\n        [=](sycl::nd_item<3> item_ct1) [[intel::reqd_sub_group_size(32)]] {\\\n          fused_ln<T, unRollFactor, threadsPerGroup, maxThreads>(output_ct0, vals_ct1, gamma_ct2, beta_ct3, epsilon_ct4, elems_per_row_ct5, item_ct1, reduce_buffer_acc_ct1.get_pointer());\\\n        });\\\n    });\\\n}"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          4390
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          4684
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          5775
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          5786
+    Length:          33
+    ReplacementText: 1, groups_per_block, threadsPerGroup
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          5826
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          5836
+    Length:          13
+    ReplacementText: 1, 1, groups_launch
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          7240
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          8199
+    Length:          11
+    ReplacementText: "/*\nDPCT1110:4: The total declared local variable size in device function fused_residual_ln exceeds 128 bytes and may cause high register pressure. Consult with your hardware vendor to find the total register size available and adjust the code, or use smaller sub-group size to avoid high register pressure.\n*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          8643
+    Length:          0
+    ReplacementText: ",\n                                  const sycl::nd_item<3> &item_ct1,\n                                  float *reduce_buffer"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          8712
+    Length:          16
+    ReplacementText: auto
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          8734
+    Length:          23
+    ReplacementText: 'item_ct1.get_group()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          8763
+    Length:          35
+    ReplacementText: 'sycl::sub_group'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          8806
+    Length:          37
+    ReplacementText: 'item_ct1.get_sub_group()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          8908
+    Length:          18
+    ReplacementText: 'tb.group_index()[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          9009
+    Length:          19
+    ReplacementText: 'tb.thread_index()[1]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          9077
+    Length:          19
+    ReplacementText: 'tb.thread_index()[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          9192
+    Length:          9
+    ReplacementText: 'item_ct1.get_group().get_local_linear_range()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          11233
+    Length:          0
+    ReplacementText: ', item_ct1, reduce_buffer'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          11868
+    Length:          0
+    ReplacementText: ', item_ct1, reduce_buffer'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          11925
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1013:8: The rounding mode could not be specified and the generated code may have different accuracy than the original code. Verify the correctness. SYCL math built-in function rounding mode is aligned with OpenCL C 1.2 standard.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          11949
+    Length:          31
+    ReplacementText: 'sycl::rsqrt(variance + epsilon)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          13269
+    Length:          0
+    ReplacementText: "/*\nDPCT1049:5: The work-group size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the work-group size if needed.\n*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          13350
+    Length:          237
+    ReplacementText: "{\\\n  dpct::has_capability_or_fail(stream->get_device(), {sycl::aspect::fp64, sycl::aspect::fp16});\\\n  stream->submit(\\\n    [&](sycl::handler &cgh) {\\\n      sycl::local_accessor<float, 1> reduce_buffer_acc_ct1(sycl::range<1>(max_warps * elems), cgh);\\\n\\\n      T * output_ct0 = output;\\\n      auto nullptr_ct1 = nullptr;\\\n      const T * vals_ct2 = vals;\\\n      const T * residual_ct3 = residual;\\\n      const T * bias_ct4 = bias;\\\n      const T * gamma_ct5 = gamma;\\\n      const T * beta_ct6 = beta;\\\n      auto epsilon_ct7 = epsilon;\\\n      auto elems_per_row_ct8 = elems_per_row;\\\n\\\n      cgh.parallel_for(\\\n        sycl::nd_range<3>(grid * block, block), \\\n        [=](sycl::nd_item<3> item_ct1) [[intel::reqd_sub_group_size(32)]] {\\\n          fused_residual_ln<T, unRollFactor, threadsPerGroup, maxThreads, false>(output_ct0, nullptr_ct1, vals_ct2, residual_ct3, bias_ct4, gamma_ct5, beta_ct6, epsilon_ct7, elems_per_row_ct8, item_ct1, reduce_buffer_acc_ct1.get_pointer());\\\n        });\\\n    });\\\n}"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          13587
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          14047
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          15138
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          15149
+    Length:          33
+    ReplacementText: 1, groups_per_block, threadsPerGroup
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          15189
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          15199
+    Length:          13
+    ReplacementText: 1, 1, groups_launch
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          16520
+    Length:          0
+    ReplacementText: "/*\nDPCT1049:6: The work-group size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the work-group size if needed.\n*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          16614
+    Length:          271
+    ReplacementText: "{\\\n  dpct::has_capability_or_fail(stream->get_device(), {sycl::aspect::fp64, sycl::aspect::fp16});\\\n  stream->submit(\\\n    [&](sycl::handler &cgh) {\\\n      sycl::local_accessor<float, 1> reduce_buffer_acc_ct1(sycl::range<1>(max_warps * elems), cgh);\\\n\\\n      T * norm_output_ct0 = norm_output;\\\n      T * res_output_ct1 = res_output;\\\n      const T * vals_ct2 = vals;\\\n      const T * residual_ct3 = residual;\\\n      const T * bias_ct4 = bias;\\\n      const T * gamma_ct5 = gamma;\\\n      const T * beta_ct6 = beta;\\\n      auto epsilon_ct7 = epsilon;\\\n      auto elems_per_row_ct8 = elems_per_row;\\\n\\\n      cgh.parallel_for(\\\n        sycl::nd_range<3>(grid * block, block), \\\n        [=](sycl::nd_item<3> item_ct1) [[intel::reqd_sub_group_size(32)]] {\\\n          fused_residual_ln<T, unRollFactor, threadsPerGroup, maxThreads, true>(norm_output_ct0, res_output_ct1, vals_ct2, residual_ct3, bias_ct4, gamma_ct5, beta_ct6, epsilon_ct7, elems_per_row_ct8, item_ct1, reduce_buffer_acc_ct1.get_pointer());\\\n        });\\\n    });\\\n}"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          16885
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          17582
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          18673
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          18684
+    Length:          33
+    ReplacementText: 1, groups_per_block, threadsPerGroup
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          18724
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          18734
+    Length:          13
+    ReplacementText: 1, 1, groups_launch
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          20385
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          20616
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          20651
+    Length:          6
+    ReplacementText: 'sycl::half'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Offset:          20775
+    Length:          6
+    ReplacementText: 'sycl::half'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/csrc/layer_norm.cu'
+    Digest:          6601cfedcd7d963895cc4b5e7c4fb188
+DpctVersion:     17.0.0
+MainHelperFileName: ''
+USMLevel:        ''
+FeatureMap:      {}
+CompileTargets:  {}
+OptionMap:
+  AnalysisScopePath:
+    Value:           '/home/baodi/workspace/dpct_deepspeed'
+    Specified:       false
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           ''
+    Specified:       false
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  EnablepProfiling:
+    Value:           'false'
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitClNamespace:
+    Value:           'false'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionDDFlag:
+    Value:           '0'
+    Specified:       false
+  ExtensionDEFlag:
+    Value:           '4294967295'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'false'
+    Specified:       false
+  RuleFile:
+    Value:           ''
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+...

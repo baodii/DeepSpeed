@@ -1,0 +1,400 @@
+---
+MainSourceFile:  '/home/baodi/workspace/dpct_deepspeed/third-party/csrc/transformer/inference/includes/inference_context.h'
+Replacements:
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          113
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          146
+    Length:          30
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          232
+    Length:          0
+    ReplacementText: "\n#include <dpct/blas_utils.hpp>\n\n#include <cmath>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          233
+    Length:          23
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          256
+    Length:          18
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          1973
+    Length:          1
+    ReplacementText: '&dpct::get_default_queue()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          2180
+    Length:          14
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          2252
+    Length:          21
+    ReplacementText: '0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          2777
+    Length:          30
+    ReplacementText: '_comp1_event = new sycl::event()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          2817
+    Length:          30
+    ReplacementText: '_comp2_event = new sycl::event()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          2857
+    Length:          29
+    ReplacementText: '_comp_event = new sycl::event()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          2896
+    Length:          29
+    ReplacementText: '_comm_event = new sycl::event()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          3018
+    Length:          20
+    ReplacementText: 'sycl::free(_workspace, dpct::get_default_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          3048
+    Length:          30
+    ReplacementText: 'dpct::destroy_event(_comp1_event)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          3088
+    Length:          30
+    ReplacementText: 'dpct::destroy_event(_comp2_event)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          3128
+    Length:          29
+    ReplacementText: 'dpct::destroy_event(_comp_event)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          3167
+    Length:          29
+    ReplacementText: 'dpct::destroy_event(_comm_event)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          3847
+    Length:          0
+    ReplacementText: "\n    dpct::device_ext &dev_ct1 = dpct::get_current_device();\n    sycl::queue &q_ct1 = dev_ct1.default_queue();"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          3875
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1106:0: 'cudaMemGetInfo' was migrated with the Intel extensions for device information which may not be supported by all compilers or runtimes. You may need to adjust the code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          3909
+    Length:          47
+    ReplacementText: 'dpct::get_current_device().get_memory_info(_free_memory_size, total_size)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          6145
+    Length:          38
+    ReplacementText: '_workspace = (void *)sycl::malloc_device(workSpaceSize, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          6250
+    Length:          20
+    ReplacementText: 'sycl::free(_workspace, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          6284
+    Length:          38
+    ReplacementText: '_workspace = (void *)sycl::malloc_device(workSpaceSize, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          7511
+    Length:          11
+    ReplacementText: 'dpct::event_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          8228
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          8494
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          8741
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          8870
+    Length:          20
+    ReplacementText: 'sycl::free(_workspace, dpct::get_default_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          9041
+    Length:          39
+    ReplacementText: '_workspace = (void *)sycl::malloc_device(_workSpaceSize, dpct::get_default_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          9130
+    Length:          14
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          9910
+    Length:          11
+    ReplacementText: 'dpct::event_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          9939
+    Length:          11
+    ReplacementText: 'dpct::event_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          10230
+    Length:          11
+    ReplacementText: 'dpct::event_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          10260
+    Length:          11
+    ReplacementText: 'dpct::event_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          10291
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          10422
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Offset:          10453
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_context.h'
+    Digest:          dfb6be33dc627c10b6670d54eb7f8199
+DpctVersion:     17.0.0
+MainHelperFileName: ''
+USMLevel:        ''
+FeatureMap:      {}
+CompileTargets:  {}
+OptionMap:
+  AnalysisScopePath:
+    Value:           '/home/baodi/workspace/dpct_deepspeed'
+    Specified:       false
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           ''
+    Specified:       false
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  EnablepProfiling:
+    Value:           'false'
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitClNamespace:
+    Value:           'false'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionDDFlag:
+    Value:           '0'
+    Specified:       false
+  ExtensionDEFlag:
+    Value:           '4294967295'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'false'
+    Specified:       false
+  RuleFile:
+    Value:           ''
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+...

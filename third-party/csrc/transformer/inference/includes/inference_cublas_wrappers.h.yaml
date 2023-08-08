@@ -1,0 +1,526 @@
+---
+MainSourceFile:  '/home/baodi/workspace/dpct_deepspeed/third-party/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+Replacements:
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          113
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          132
+    Length:          0
+    ReplacementText: "\n#include <dpct/blas_utils.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          133
+    Length:          23
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          156
+    Length:          18
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          226
+    Length:          23
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          249
+    Length:          26
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          304
+    Length:          17
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          346
+    Length:          0
+    ReplacementText: "\n#include <dpct/lib_common_utils.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          868
+    Length:          14
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          910
+    Length:          17
+    ReplacementText: 'oneapi::mkl::transpose'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          955
+    Length:          17
+    ReplacementText: 'oneapi::mkl::transpose'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          1254
+    Length:          16
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          1322
+    Length:          0
+    ReplacementText: ' try '
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          1375
+    Length:          11
+    ReplacementText: 'oneapi::mkl::transpose::nontrans'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          2801
+    Length:          14
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          2825
+    Length:          952
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::gemm(*handle, transa, transb, m, n, k, (const void*)alpha, (const void*)A, dpct::library_data_t::real_float, (transa == oneapi::mkl::transpose::nontrans) ? m : k, (const void*)B, dpct::library_data_t::real_float, ldb, (const void*)beta, C, dpct::library_data_t::real_float, m, dpct::library_data_t::real_float))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          3883
+    Length:          21
+    ReplacementText: '0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          4160
+    Length:          0
+    ReplacementText: "\ncatch (sycl::exception const &exc) {\n  std::cerr << exc.what() << \"Exception caught at file:\" << __FILE__ << \", line:\" << __LINE__ << std::endl;\n  std::exit(1);\n}"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          4692
+    Length:          14
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          4734
+    Length:          17
+    ReplacementText: 'oneapi::mkl::transpose'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          4779
+    Length:          17
+    ReplacementText: 'oneapi::mkl::transpose'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          5066
+    Length:          16
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          5187
+    Length:          11
+    ReplacementText: 'oneapi::mkl::transpose::nontrans'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          6842
+    Length:          6
+    ReplacementText: 'sycl::half'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          6859
+    Length:          10
+    ReplacementText: 'dpct::library_data_t::real_half'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          6872
+    Length:          11
+    ReplacementText: 'dpct::library_data_t::real_bfloat16'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          6889
+    Length:          14
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          7392
+    Length:          11
+    ReplacementText: 'oneapi::mkl::transpose::nontrans'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          7829
+    Length:          10
+    ReplacementText: 'dpct::library_data_t::real_float'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          7993
+    Length:          21
+    ReplacementText: '0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          9100
+    Length:          14
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          9513
+    Length:          17
+    ReplacementText: 'oneapi::mkl::transpose'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          9569
+    Length:          17
+    ReplacementText: 'oneapi::mkl::transpose'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          9806
+    Length:          16
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          9836
+    Length:          0
+    ReplacementText: ' try '
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          11388
+    Length:          14
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          11412
+    Length:          1443
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::gemm_batch(*handle, op_A, op_B, m, n, k, alpha, A, dpct::library_data_t::real_float, (op_A == oneapi::mkl::transpose::nontrans) ? m : k, stride_A, B, dpct::library_data_t::real_float, (op_B == oneapi::mkl::transpose::nontrans) ? k : n, stride_B, beta, C, dpct::library_data_t::real_float, m, stride_C, batch, dpct::library_data_t::real_float))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          12961
+    Length:          21
+    ReplacementText: '0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          13272
+    Length:          0
+    ReplacementText: "\ncatch (sycl::exception const &exc) {\n  std::cerr << exc.what() << \"Exception caught at file:\" << __FILE__ << \", line:\" << __LINE__ << std::endl;\n  std::exit(1);\n}"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          14112
+    Length:          14
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          14513
+    Length:          17
+    ReplacementText: 'oneapi::mkl::transpose'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          14569
+    Length:          17
+    ReplacementText: 'oneapi::mkl::transpose'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          14806
+    Length:          16
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          16603
+    Length:          6
+    ReplacementText: 'sycl::half'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          16620
+    Length:          10
+    ReplacementText: 'dpct::library_data_t::real_half'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          16633
+    Length:          11
+    ReplacementText: 'dpct::library_data_t::real_bfloat16'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          16650
+    Length:          14
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          17261
+    Length:          11
+    ReplacementText: 'oneapi::mkl::transpose::nontrans'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          17542
+    Length:          11
+    ReplacementText: 'oneapi::mkl::transpose::nontrans'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          18060
+    Length:          10
+    ReplacementText: 'dpct::library_data_t::real_float'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Offset:          18238
+    Length:          21
+    ReplacementText: '0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  '/home/baodi/workspace/dpct_deepspeed/csrc/transformer/inference/includes/inference_cublas_wrappers.h'
+    Digest:          27836772d9bae75b9924d1d7b0125937
+DpctVersion:     17.0.0
+MainHelperFileName: ''
+USMLevel:        ''
+FeatureMap:      {}
+CompileTargets:  {}
+OptionMap:
+  AnalysisScopePath:
+    Value:           '/home/baodi/workspace/dpct_deepspeed'
+    Specified:       false
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           ''
+    Specified:       false
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  EnablepProfiling:
+    Value:           'false'
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitClNamespace:
+    Value:           'false'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionDDFlag:
+    Value:           '0'
+    Specified:       false
+  ExtensionDEFlag:
+    Value:           '4294967295'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'false'
+    Specified:       false
+  RuleFile:
+    Value:           ''
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+...
