@@ -115,8 +115,8 @@ public:
                       unsigned max_out_tokens,
                       unsigned min_out_tokens)
     {
-    dpct::device_ext& dev_ct1 = dpct::get_current_device();
-    sycl::queue& q_ct1 = dev_ct1.default_queue();
+        dpct::device_ext& dev_ct1 = dpct::get_current_device();
+        sycl::queue& q_ct1 = dev_ct1.default_queue();
         size_t total_size;
         /*
         DPCT1106:0: 'cudaMemGetInfo' was migrated with the Intel extensions for device information
@@ -137,19 +137,20 @@ public:
         size_t temp_size = batch_size * (num_heads / mp_size) * max_out_tokens;
         size_t cache_size =
             num_layers * batch_size * ((num_heads * effective_head_size) / mp_size) * 2;
-        size_t minimal_requirements =
-            temp_size + (_free_memory_size > GIGABYTE ? 500 : 100) * MEGABYTE;
-        if (_free_memory_size < minimal_requirements) {
-            printf("Requested:\t%lu\nFree:\t%lu\nTotal:\t%lu\n",
-                   minimal_requirements,
-                   _free_memory_size,
-                   total_size);
-            throw std::runtime_error("Workspace can't be allocated, no enough memory.");
-        }
+        /* size_t minimal_requirements = */
+        /*     temp_size + (_free_memory_size > GIGABYTE ? 500 : 100) * MEGABYTE; */
+        /* if (_free_memory_size < minimal_requirements) { */
+        /*     printf("Requested:\t%lu\nFree:\t%lu\nTotal:\t%lu\n", */
+        /*            minimal_requirements, */
+        /*            _free_memory_size, */
+        /*            total_size); */
+        /*     throw std::runtime_error("Workspace can't be allocated, no enough memory."); */
+        /* } */
 
-        _max_seq_len = ((_free_memory_size - minimal_requirements) / elem_size) /
-                       (activation_size + temp_size + cache_size);
-        _max_seq_len = std::min((size_t)max_out_tokens, _max_seq_len);
+        /* _max_seq_len = ((_free_memory_size - minimal_requirements) / elem_size) / */
+        /*                (activation_size + temp_size + cache_size); */
+        /* _max_seq_len = std::min((size_t)max_out_tokens, _max_seq_len); */
+        _max_seq_len = (size_t)max_out_tokens;
         size_t workSpaceSize = ((external_cache ? (activation_size + temp_size)
                                                 : (activation_size + temp_size + cache_size))) *
                                _max_seq_len * elem_size;
@@ -157,7 +158,7 @@ public:
 
         if (_max_seq_len < min_out_tokens) {
             printf(
-                "Allocatable workspace available (%ld tokens) is less than minimum requested "
+                "Allocatable workspace available (%d tokens) is less than minimum requested "
                 "workspace (%d tokens)\n",
                 _max_seq_len,
                 min_out_tokens);
