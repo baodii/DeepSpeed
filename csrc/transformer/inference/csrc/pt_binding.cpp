@@ -1251,8 +1251,8 @@ at::Tensor ds_linear_layer(at::Tensor& input,
                 false,
                 InferenceContext::Instance().GetCurrentStream(),
                 3,
-<<<<<<< HEAD
-                input.size(1));
+                input.size(1),
+                rope_theta);
             return at::from_blob(final_output,
                                  {3, input.size(0), num_heads, input.size(1), head_size},
                                  c10::TensorType::contiguousStridesOf(
@@ -1260,16 +1260,6 @@ at::Tensor ds_linear_layer(at::Tensor& input,
                                  nullptr,
                                  options,
                                  input.device());
-||||||| parent of beed962c ([Bug fix] Add rope_theta for llama config (#4480))
-                input.size(1));
-            return at::from_blob(
-                final_output, {3, input.size(0), num_heads, input.size(1), head_size}, options);
-=======
-                input.size(1),
-                rope_theta);
-            return at::from_blob(
-                final_output, {3, input.size(0), num_heads, input.size(1), head_size}, options);
->>>>>>> beed962c ([Bug fix] Add rope_theta for llama config (#4480))
             // return at::from_blob(workspace, {input.size(0) * input.size(1), 3, num_heads,
             // head_size}, options);
         }
