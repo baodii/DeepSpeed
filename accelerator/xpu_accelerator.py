@@ -245,9 +245,9 @@ class XPU_Accelerator(DeepSpeedAccelerator):
             # is op_builder from deepspeed or a 3p version? this should only succeed if it's deepspeed
             # if successful this also means we're doing a local install and not JIT compile path
             from op_builder import __deepspeed__  # noqa: F401 # type: ignore
-            from op_builder.xpu import CPUAdagradBuilder, CPUAdamBuilder, FusedAdamBuilder, AsyncIOBuilder, InferenceBuilder
+            from op_builder.xpu import CPUAdagradBuilder, CPUAdamBuilder, FusedAdamBuilder, AsyncIOBuilder, InferenceBuilder, InferenceCoreBuilder
         except ImportError:
-            from deepspeed.ops.op_builder.xpu import CPUAdagradBuilder, CPUAdamBuilder, FusedAdamBuilder, AsyncIOBuilder, InferenceBuilder
+            from deepspeed.ops.op_builder.xpu import CPUAdagradBuilder, CPUAdamBuilder, FusedAdamBuilder, AsyncIOBuilder, InferenceBuilder, InferenceCoreBuilder
 
         if class_name == "AsyncIOBuilder":
             return AsyncIOBuilder
@@ -259,6 +259,8 @@ class XPU_Accelerator(DeepSpeedAccelerator):
             return FusedAdamBuilder
         elif class_name == "InferenceBuilder":
             return InferenceBuilder
+        elif class_name == "InferenceCoreBuilder":
+            return InferenceCoreBuilder
         else:
             return None
 

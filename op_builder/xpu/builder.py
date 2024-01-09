@@ -284,7 +284,10 @@ class SYCLAutoOpBuilder(OpBuilder):
         if self.is_sycl_enabled():
 
             ds_root_path = Path(__file__).parent.parent.parent.parent.parent.absolute()
-            ds_csrc_path = os.path.join(ds_root_path, 'deepspeed/ops')
+            if self.NAME == 'inference_core_ops':
+                ds_csrc_path = os.path.join(ds_root_path, 'deepspeed')
+            else:
+                ds_csrc_path = os.path.join(ds_root_path, 'deepspeed/ops')
 
             sycl_ds_kernel_path = "deepspeed/third-party"
             sycl_link_path = os.path.join(ds_root_path, sycl_ds_kernel_path)
